@@ -23,9 +23,20 @@
             background-color: darkred;
             color: red;
         }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 1 / 3 / 2 / 4; }
+        .div4 { grid-area: 1 / 4 / 2 / 5; }
+        .div5 { grid-area: 1 / 5 / 2 / 6; }
     </style>
 </head>
-
 <header>
     <h1>trtb1 - lnx</h1>
 </header>
@@ -41,16 +52,23 @@
     <div id="section">
         <p>hello.</p>
         <p>
-            this is my lnx page. <br>
-            ily.
+            this is my lnx page.
         </p>
     </div>
     <div id="section">
-        <p>hello.</p>
         <p>
-            this is my lnx page. <br>
-            ily.
+            this is my lnx page.
         </p>
+    </div>
+    <div id="section">
+        <h1>test</h1>
+    </div>
+    <div class="parent">
+        <div class="div1" id="section"> 1</div>
+        <div class="div2" id="section"> 2</div>
+        <div class="div3" id="section"> 2</div>
+        <div class="div4" id="section"> 2</div>
+        <div class="div5" id="section"> 2</div>
     </div>
 </body>
 </html>
